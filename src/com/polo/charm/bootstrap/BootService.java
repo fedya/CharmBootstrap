@@ -17,7 +17,6 @@ public class BootService extends Service {
         // wait to make sure the system is sane.
         mHandler.postDelayed(new Runnable()
         {
-            @Override
             public void run() {
                 
                 String filesDir = getFilesDir().getAbsolutePath();
