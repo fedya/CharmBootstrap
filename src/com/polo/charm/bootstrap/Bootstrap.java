@@ -33,7 +33,6 @@ public class Bootstrap extends Activity {
 
         Button flash = (Button)findViewById(R.id.flash);
         flash.setOnClickListener(new OnClickListener() {
-            @Override
             public void onClick(View v) {
                 String filesDir = getFilesDir().getAbsolutePath();
                 String busybox = filesDir + "/busybox";
@@ -96,7 +95,6 @@ public class Bootstrap extends Activity {
         
         Button reboot = (Button)findViewById(R.id.reboot);
         reboot.setOnClickListener(new OnClickListener() {
-            @Override
             public void onClick(View v) {
                 StringBuilder command = new StringBuilder();
                 command.append("echo 1 > /data/.recovery_mode ; ");
